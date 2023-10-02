@@ -5,8 +5,8 @@ let input = document.querySelector("input");
 let searchForm = document.querySelector(".searchForm");
 let user_info = document.querySelector(".user-info");
 
-let lightmode = document.querySelector(".modeBtn1")
-let enableDark = document.querySelector(".modeBtn2")
+let lightmode = document.querySelector(".modeBtn1");
+let enableDark = document.querySelector(".modeBtn2");
 
 let appMode = document.querySelector(".app");
 
