@@ -1,0 +1,233 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(231, 231, 241);
+    font-family: cursive;
+    color: #000;
+    overflow: hidden;
+    --box-shadow: -3px -2px 53px 2px rgb(188, 191, 205);
+    --color: white;
+}
+
+
+.app{
+    /*border: 1px solid black;*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    /* border: 1px solid red; */
+    height: 82vh;
+    width: 50vw;
+    /* overflow: hidden; */
+    /* background-color: white; */
+}
+
+.header{
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    /* overflow: hidden; */
+}
+
+.modes{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 200px;
+    height: 4vh;
+    margin-right: 5px;
+}
+
+.modeBtn1{
+    position: relative;
+    scale: 0;
+    border: none;
+    background: transparent;
+}
+.modeBtn2{
+    position: absolute;
+    scale: 1.5;
+    border: none;
+    background: transparent;
+}
+
+.lightBtnSvg{
+    outline: white;
+}
+
+.searchField{
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 10vh;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.searchForm{
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.searchbar{
+    width: 70%;
+    height: 10vh;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.searchBtn{
+    width: 7vw;
+    height: 7vh;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-left: 15px;
+}
+
+.searchSvg{
+    margin-right: 10px;
+    scale: 1.5;
+}
+
+
+.user-info{
+    border-radius: 10px;
+    background-color: white;
+    /*border: 1px solid black;*/
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    width: 100%;
+    height: 55vh;
+    margin-top: 25px;
+    /* overflow: hidden; */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+.user-details{
+    width: 100%;
+    height: 18vh;
+    /*border: 1px solid black;*/
+    display: flex;
+}
+
+.user-img{
+    /*border: 1px solid black;*/
+    width: 10vw;
+    height: 18vh;
+}
+
+.userName{
+    /*border: 1px solid black;*/
+    width: 30vw;
+    height: 18vh;
+}
+
+.join-date{
+    /*border: 1px solid black;*/
+    width: 9.6vw;
+    height: 18vh;
+}
+
+
+.user-activity{
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    line-height: 2;
+}
+
+.user-repos{
+    margin-right: 140px;
+}
+.user-followers{
+    margin-right: 140px;
+}
+.user-following{
+    margin-right: 140px;
+}
+
+
+.other-info{
+    /*border: 1px solid black;*/
+    width: 80.4%;
+    height: 15vh;
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* justify-content: end;
+    align-items: center; */
+}
+
+.user-location{
+    display: flex;
+}
+.user-community{
+    display: flex;
+}
+.user-twitter{
+    display: flex;
+    /* justify-content: baselines; */
+    align-items: baseline;
+}
+.user-company{
+    display: flex;
+}
+
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 700px) {
+    .wrapper {
+      width: 280px;
+      height: 653px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .app{
+      background: #bada55;
+    }
+}
+
+.activeDarkMode{
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    --box-shadow: -3px -2px 53px 2px rgb(183,175,175)
+}
+
+.active{
+    scale: 1.5;
+    color: var(--color);
+}
+.deactive{
+    scale: 0;
+}
